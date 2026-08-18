@@ -4,14 +4,14 @@ public class PedidoEncomienda extends Pedido {
         super(idPedido, direccionEntrega, "Encomienda");
     }
 
-    // Sobreescritura: sin parámetros
+    // sin parámetros
     @Override
     public void asignarRepartidor() {
         System.out.println("Pedido Encomienda #" + idPedido + " -> Dirección: " + direccionEntrega);
         System.out.println("  [Auto] Asignando repartidor capacitado tras validar peso y tipo de embalaje.");
     }
 
-    // Sobrecarga: con parámetro
+    // Con parámetro
     @Override
     public void asignarRepartidor(String nombreRepartidor) {
         System.out.println("[Pedido Encomienda]");

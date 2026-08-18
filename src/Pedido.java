@@ -9,12 +9,12 @@ public class Pedido {
         this.tipoPedido = tipoPedido;
     }
 
-    // Método base para sobreescritura
+    // Para sobrescribir
     public void asignarRepartidor() {
         System.out.println("Pedido #" + idPedido + " (" + tipoPedido + "): Buscando un repartidor genérico...");
     }
 
-    // Método sobrecargado (recibe parámetro)
+    // Con parámetro
     public void asignarRepartidor(String nombreRepartidor) {
         System.out.println("Pedido #" + idPedido + " (" + tipoPedido + "): Asignado manualmente a " + nombreRepartidor + ".");
     }

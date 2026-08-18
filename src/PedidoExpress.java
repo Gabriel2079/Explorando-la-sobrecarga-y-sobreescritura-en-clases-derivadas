@@ -4,14 +4,14 @@ public class PedidoExpress extends Pedido {
         super(idPedido, direccionEntrega, "Compra Express");
     }
 
-    // Sobreescritura: sin parámetros
+    // sin parámetros
     @Override
     public void asignarRepartidor() {
         System.out.println("Pedido Express #" + idPedido + " -> Dirección: " + direccionEntrega);
         System.out.println("  [Auto] Asignando de urgencia al repartidor más cercano con disponibilidad inmediata.");
     }
 
-    // Sobrecarga: con parámetro
+    // con parámetro
     @Override
     public void asignarRepartidor(String nombreRepartidor) {
         System.out.println("[Pedido Express]");
